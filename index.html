@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,46 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Oferecemos serviços de manutenção geral residencial e comercial, incluindo elétrica, hidráulica, pintura e mais.">
     <title>Serviços de Manutenção Geral/ SMG</title>
-    <!-- Link para o Font Awesome -->
+    <link rel="stylesheet" href="style.css"> <!-- Caminho correto do CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- Link para o favicon -->
     <link rel="shortcut icon" href="smg.jpeg">
-
-    
 </head>
 <body>
     <header>
         <div class="contact-info-header">
-            <div>
-                <i class="fas fa-envelope"></i>
-                <p>Email: smg.servicosdemanutencao@gmail.com</p>
-            </div>
-            <div>
+            <div class="contact-item">
                 <i class="fas fa-phone"></i>
-                <p>Telefone: (11) 97473-7239</p>
+                <p>Brasília: (61) 98135-2700</p>
             </div>
-            <div>
+            <div class="contact-item">
                 <i class="fab fa-whatsapp"></i>
-                <p>WhatsApp: <a href="https://wa.me/5511974737239?text=Olá%20gostaria%20de%20mais%20informações" target="_blank">(11) 97473-7239</a></p>
+                <p>WhatsApp: (61) 98135-2700</p>
             </div>
         </div>
-        <img src="smg.jpeg" alt="Logo SMG">
-        <nav>
-            <ul>
-                <li><a href="#home" class="destaque"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about" class="destaque"><i class="fas fa-info-circle"></i> Sobre</a></li>
-                <li><a href="#contact" class="destaque"><i class="fas fa-envelope"></i> Contato</a></li>
-            </ul>
-        </nav>
+        <div class="logo-navigation">
+            <nav>
+                <ul>
+                    <li><a href="#home">Página Inicial</a></li>
+                    <li><a href="#about">Empresa</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section id="home">
-            <div class="image-container">
-                <img src="insta.jpeg" alt="Serviço de Hidráulica">
-                <img src="peg.jpeg" alt="Serviço de Pintura">
-                <img src="cond.jpeg" alt="Serviço de Instalação de Ar Condicionado">
-            </div>
             <h2>Bem-vindo à Manutenção Geral</h2>
             <p>Oferecemos serviços de manutenção residencial e comercial de alta qualidade.</p>
             <ul>
@@ -84,7 +72,6 @@
     </footer>
 
     <script>
-        // Função para enviar o formulário
         function enviarFormulario(event) {
             event.preventDefault();
             alert("Obrigado por entrar em contato!");
